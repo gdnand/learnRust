@@ -1,4 +1,4 @@
-use hashmaps;
+mod hashmaps;
 
 fn main() {
   // let v: Vec<i32> = Vec::new(); // One Way to do this
@@ -22,10 +22,11 @@ fn main() {
     println!("{}", items);
   }
   println!("{:?}", vector);
-  let s :String = String::from("Initial Contents");
+  let s: String = String::from("Initial Contents");
   let v: String = String::from(" Initial Contents 2");
   println!("{}", s);
   let b: String = s[0..4].to_string();
   println!("{}", s + &v);
   println!("{}", b);
+  hashmaps::run();
 }

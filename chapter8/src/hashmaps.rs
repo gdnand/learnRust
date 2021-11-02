@@ -1,6 +1,7 @@
+#[warn(dead_code)]
 use std::collections::HashMap;
 
-pub fn main() {
+pub fn run() {
   let mut scores = HashMap::new();
   scores.insert(String::from("Blue"), 10);
   scores.insert(String::from("Yellow"), 50);
